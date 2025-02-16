@@ -1,192 +1,284 @@
 <!DOCTYPE html>
 <html>
-    <header>
-        <title>HTML Web Design System</title>
-        <link rel="stylesheet" type="text/css" href="./styles.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    </header>
-    <body>
-        <div class="header">
-            <h1>HTML Web Design System</h1>
+  <header>
+    <title>HTML Web Design System</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </header>
+  <body>
+    <div class="header">
+      <h1>HTML Web Design System</h1>
+    </div>
+    <div class="main">
+      <div class="content">
+        <h1>Introduction</h1>
+        <p id="intro">
+          Welcome to the HTML Web Design System. This is a simple example to
+          demonstrate how to structure your HTML and CSS files.
+        </p>
+        <div id="colors">
+          <h2>Colors</h2>
+          <p>
+            This is an example of custom colors designed to work in a theme.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Hex Code</th>
+                <th>Preview</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Blue-Grey</td>
+                <td>#4F5F73</td>
+                <td>
+                  <div class="background-color" id="color-1"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Light Grey</td>
+                <td>#D6D6D6</td>
+                <td>
+                  <div class="background-color" id="color-2"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Snow Day Grey</td>
+                <td>#FAFAFA</td>
+                <td>
+                  <div class="background-color" id="color-3"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Middle Grey</td>
+                <td>#C0C6CE</td>
+                <td>
+                  <div class="background-color" id="color-4"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Beige</td>
+                <td>#CCC4C0</td>
+                <td>
+                  <div class="background-color" id="color-5"></div>
+                </td>
+              </tr>
+              <tr>
+                <td>Rust Red</td>
+                <td>#8C4B45</td>
+                <td>
+                  <div class="background-color" id="color-6"></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="main">
-            <div class="content">
-                <h1>Introduction</h1>
-                <p id="intro">Welcome to the HTML Web Design System. This is a simple example to demonstrate how to structure your HTML and CSS files.</p>
-                <div id="colors">
-                    <h2>Colors</h2>
-                    <p>This is an example of custom colors designed to work in a theme.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Hex Code</th>
-                                <th>Preview</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Blue-Grey</td>
-                                <td>#4F5F73</td>
-                                <td>
-                                    <div class="background-color" id="color-1"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Light Grey</td>
-                                <td>#D6D6D6</td>
-                                <td>
-                                    <div class="background-color" id="color-2"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Snow Day Grey</td>
-                                <td>#FAFAFA</td>
-                                <td>
-                                    <div class="background-color" id="color-3"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Middle Grey</td>
-                                <td>#C0C6CE</td>
-                                <td>
-                                    <div class="background-color" id="color-4"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Beige</td>
-                                <td>#CCC4C0</td>
-                                <td>
-                                    <div class="background-color" id="color-5"></div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Rust Red</td>
-                                <td>#8C4B45</td>
-                                <td>
-                                    <div class="background-color" id="color-6"></div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="fonts">
-                    <h2>Fonts</h2>
-                    <p>This is an example of some Google Web fonts to use with this system.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Preview</th>
-                                <th>Link</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Roboto</td>
-                                <td id='roboto'>
-                                    <p id="normal">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="italic">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="bold">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="underline">The quick brown fox jumps over the lazy dog.</p>
-                                </td>
-                                <td><a href="https://fonts.google.com/specimen/Roboto" target="_blank">Roboto</a></td>
-                            </tr>
-                            <tr>
-                                <td>Open Sans</td>
-                                <td id='open-Sans'>
-                                    <p id="normal">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="italic">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="bold">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="underline">The quick brown fox jumps over the lazy dog.</p>
-                                </td>
-                                <td><a href="https://fonts.google.com/specimen/Open+Sans" target="_blank">Open Sans</a></td>
-                            </tr>
-                            <tr>
-                                <td>Playfair Display</td>
-                                <td id='playfair'>
-                                    <p id="normal">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="italic">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="bold">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="underline">The quick brown fox jumps over the lazy dog.</p>
-                                </td>
-                                <td><a href="https://fonts.google.com/specimen/Lato" target="_blank">Lato</a></td>
-                            </tr>
-                            <tr>
-                                <td>Montagu Slab</td>
-                                <td id='montagu'>
-                                    <p id="normal">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="italic">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="bold">The quick brown fox jumps over the lazy dog.</p>
-                                    <p id="underline">The quick brown fox jumps over the lazy dog.</p>
-                                </td>
-                                <td><a href="https://fonts.google.com/specimen/Montserrat" target="_blank">Montserrat</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="page-elements">
-                    <h2>Page Elements</h2>
-                    <p>These are examples of Page Elements and their styling you should use.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Element</th>
-                                <th>Preview</th>
-                                <th>Styling Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>h1 - Heading 1</td>
-                                <td><h1>Title</h1></td>
-                                <td><strong>font-size:</strong> 24px, <br><strong>font-weight:</strong> Bold, <br><strong>color:</strong> #37424F</td>
-                            </tr>
-                            <tr>
-                                <td>h2 - Heading 2</td>
-                                <td><h2>Section Header</h2></td>
-                                <td><strong>font-size:</strong> 18px, <br><strong>font-weight:</strong> Bold, <br><strong>color:</strong> #4F5F73</td>
-                            </tr>
-                            <tr>
-                                <td>h3 - Heading 3</td>
-                                <td><h3>Sub-Heading</h3></td>
-                                <td><strong>font-size:</strong> 16px, <br><strong>font-weight:</strong> Bold, <br><strong>color:</strong> #8C4B45</td>
-                            </tr>
-                            <tr>
-                                <td>p - Paragraph</td>
-                                <td><p>This is a paragraph of text.</p></td>
-                                <td><strong>font-size:</strong> 14px, <br><strong>font-weight:</strong> Normal, <br><strong>color:</strong> #000000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div id="interactive-elements">
-                    <h2>Interactive Elements</h2>
-                    <p>These are examples of interactive elements and their styling you should use.</p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Element</th>
-                                <th>Preview</th>
-                                <th>Styling Details</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>button</td>
-                                <td><button>Button</button></td>
-                                <td>font-size: 14px, <br>font-weight: Bold, <br>color: #FFFFFF, <br>background-color: #4F5F73</td>
-                            </tr>
-                            <tr>
-                                <td>a</td>
-                                <td><a href="">Link</a></td>
-                                <td>font-size: 14px, <br>color: #4F5F73 <br>color:active : #8C4B4, <br>text-decoration: None</td>
-                            </tr>
-                        </tbody>
-                    </table>
-            </div>
+        <div id="fonts">
+          <h2>Fonts</h2>
+          <p>
+            This is an example of some Google Web fonts to use with this system.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Preview</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Roboto</td>
+                <td id="roboto">
+                  <p id="normal">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="italic">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="bold">The quick brown fox jumps over the lazy dog.</p>
+                  <p id="underline">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                </td>
+                <td>
+                  <a
+                    href="https://fonts.google.com/specimen/Roboto"
+                    target="_blank"
+                    >Roboto</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Open Sans</td>
+                <td id="open-Sans">
+                  <p id="normal">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="italic">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="bold">The quick brown fox jumps over the lazy dog.</p>
+                  <p id="underline">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                </td>
+                <td>
+                  <a
+                    href="https://fonts.google.com/specimen/Open+Sans"
+                    target="_blank"
+                    >Open Sans</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Playfair Display</td>
+                <td id="playfair">
+                  <p id="normal">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="italic">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="bold">The quick brown fox jumps over the lazy dog.</p>
+                  <p id="underline">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                </td>
+                <td>
+                  <a
+                    href="https://fonts.google.com/specimen/Lato"
+                    target="_blank"
+                    >Lato</a
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Montagu Slab</td>
+                <td id="montagu">
+                  <p id="normal">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="italic">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                  <p id="bold">The quick brown fox jumps over the lazy dog.</p>
+                  <p id="underline">
+                    The quick brown fox jumps over the lazy dog.
+                  </p>
+                </td>
+                <td>
+                  <a
+                    href="https://fonts.google.com/specimen/Montserrat"
+                    target="_blank"
+                    >Montserrat</a
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    </body>
+        <div id="page-elements">
+          <h2>Page Elements</h2>
+          <p>
+            These are examples of Page Elements and their styling you should
+            use.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Preview</th>
+                <th>Styling Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>h1 - Heading 1</td>
+                <td><h1>Title</h1></td>
+                <td>
+                  <strong>font-size:</strong> 24px, <br /><strong
+                    >font-weight:</strong
+                  >Bold, <br /><strong>color:</strong> #37424F
+                </td>
+              </tr>
+              <tr>
+                <td>h2 - Heading 2</td>
+                <td><h2>Section Header</h2></td>
+                <td>
+                  <strong>font-size:</strong> 18px, <br /><strong
+                    >font-weight:</strong
+                  >
+                  Bold, <br /><strong>color:</strong> #4F5F73
+                </td>
+              </tr>
+              <tr>
+                <td>h3 - Heading 3</td>
+                <td><h3>Sub-Heading</h3></td>
+                <td>
+                  <strong>font-size:</strong> 16px, <br /><strong
+                    >font-weight:</strong
+                  >
+                  Bold, <br /><strong>color:</strong> #8C4B45
+                </td>
+              </tr>
+              <tr>
+                <td>p - Paragraph</td>
+                <td><p>This is a paragraph of text.</p></td>
+                <td>
+                  <strong>font-size:</strong> 14px, <br /><strong
+                    >font-weight:</strong
+                  >
+                  Normal, <br /><strong>color:</strong> #000000
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="interactive-elements">
+          <h2>Interactive Elements</h2>
+          <p>
+            These are examples of interactive elements and their styling you
+            should use.
+          </p>
+          <table>
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Preview</th>
+                <th>Styling Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>button</td>
+                <td>
+                  <button>Button</button>
+                </td>
+                <td>
+                  font-size: 14px, <br />font-weight: Bold, <br />color:
+                  #FFFFFF, <br />background-color: #4F5F73
+                </td>
+              </tr>
+              <tr>
+                <td>a</td>
+                <td><a href="">Link</a></td>
+                <td>
+                  font-size: 14px, <br />color: #4F5F73 <br />color:active :
+                  #8C4B4, <br />text-decoration: None
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
